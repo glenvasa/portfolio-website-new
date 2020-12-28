@@ -989,22 +989,29 @@
         </div>
         <div class="row">
           <div class="contact-form">
-            <form>
+            <form action="POST" data-netlify="true">
               <div class="row">
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Name" class="input-control">
+                    <input type="text" name="name" placeholder="Name" class="input-control">
                   </div> 
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Email" class="input-control">
+                    <input type="text" name="email" placeholder="Email" class="input-control">
                   </div> 
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Subject" class="input-control">
+                    <input type="text" name="subject" placeholder="Subject" class="input-control">
                   </div>                      
                 </div>
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <textarea class="input-control" placeholder="Message"></textarea>
+                    <textarea name="message" class="input-control" placeholder="Message"></textarea>
+                  </div>
+                  <div class="input-group outer-shadow hover-in-shadow">
+                    <input type="file" name="myfile" placeholder="Upload File">
+                  </div>
+                  <div class="input-group outer-shadow hover-inshadow">
+                    <div data-netlify-recaptcha="true">
+                    </div>
                   </div>
                 </div>
               </div>
