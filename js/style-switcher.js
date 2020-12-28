@@ -17,13 +17,22 @@ window.addEventListener("scroll", () => {
 // theme colors
 const alternateStyles = document.querySelectorAll(".alternate-style");
 function setActiveStyle(color) {
+  localStorage.setItem("color", color);
+  changeColor();
+}
+
+function changeColor() {
   alternateStyles.forEach((style) => {
-    if (color === style.getAttribute("title")) {
+    if (localStorage.getItem("color") === style.getAttribute("title")) {
       style.removeAttribute("disabled");
     } else {
       style.setAttribute("disabled", "true");
     }
   });
+}
+// checking if 'color' key exists
+if (localStorage.getItem("color") !== null) {
+  changeColor();
 }
 
 // theme light and dark mode
