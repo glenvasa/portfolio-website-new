@@ -962,6 +962,7 @@ img {
   border-radius: 5px;
   width: 100%;
   transition: all 0.3s ease;
+  /* height: 250px; */
 }
 
 .portfolio-section .portfolio-item-inner:hover .portfolio-item-img img {
