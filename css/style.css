@@ -357,6 +357,11 @@ img {
   justify-content: center;
   transition: all 0.3s ease;
 }
+
+.header .hamburger-btn.hidden {
+  visibility: hidden;
+}
+
 .header .hamburger-btn:after {
   border-radius: 50%;
 }
@@ -387,7 +392,30 @@ img {
   top: 6px;
 }
 
-/* navigation menu */
+/* header link */
+.header-links-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.header-links .link {
+  margin-right: 10px;
+  background-color: red;
+}
+
+.header-links .link a{
+  color: var(--skin-color);
+}
+
+/* navigation menu mobile */
 .nav-menu {
   position: fixed;
   background-color: var(--bg-black-50);
