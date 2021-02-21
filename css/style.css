@@ -40,7 +40,22 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   background-color: var(--bg-black-50);
+  position: relative;
 }
+
+/* body::before {
+  content: "";
+  background-image: url("markus-spiske-cvBBO4PzWPg-unsplash.jpg");
+  background-size: cover;
+  position: absolute;
+  opacity: 0.1;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+
+  z-index: -100;
+} */
 
 body.hidden-scrolling {
   overflow-y: hidden;
@@ -140,13 +155,13 @@ img {
   width: 30px;
   height: 30px;
   border: 4px solid #8a49ff;
-  right: 10%;
-  bottom: 10%;
+  left: 6%;
+  bottom: 20%;
   animation: spin 10s linear infinite;
 }
 
 .effect-2 {
-  left: 3%;
+  right: 10%;
   bottom: 20%;
   width: 40px;
   display: flex;
@@ -163,17 +178,20 @@ img {
 .effect-3 {
   height: 180px;
   width: 180px;
-  border: 25px solid var(--skin-color);
+  border: 25px solid #f5426c;
+  /*   
+  border: 25px solid var(--skin-color); */
   border-radius: 50%;
-  left: 50%;
+  right: 9%;
   top: -120px;
+  overflow: hidden;
   animation: leftBounce 3s ease-in-out infinite;
 }
 .effect-4 {
-  border-top: 30px solid transparent;
-  border-left: 30px solid #06d79c;
-  left: 30%;
-  top: 20%;
+  border-top: 40px solid transparent;
+  border-left: 40px solid #06d79c;
+  left: 40%;
+  bottom: 30%;
   animation: spin 15s linear infinite;
 }
 .effect-4:before {
@@ -189,8 +207,8 @@ img {
 .effect-5 {
   height: 50px;
   width: 50px;
-  right: 8%;
-  top: 30%;
+  left: 30%;
+  top: 20%;
   display: flex;
   justify-content: space-between;
   border-radius: 50%;
@@ -403,15 +421,15 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2000;
+  z-index: 100;
 }
 
 .header-links .link {
-  margin-right: 10px;
-  background-color: red;
+  margin-right: 20px;
+  background-color: transparent;
 }
 
-.header-links .link a{
+.header-links .link a {
   color: var(--skin-color);
 }
 
