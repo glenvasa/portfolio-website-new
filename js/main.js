@@ -1,4 +1,19 @@
-// navigation menu
+// highlight header link for corresponding active section
+
+let headerLinks = document.querySelectorAll(".header-links .link a");
+headerLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    setTimeout(() => {
+      headerLinks.forEach((link) => {
+        window.location.hash.includes(link.innerText)
+          ? (link.style.color = "white")
+          : (link.style.color = "var(--skin-color)");
+      });
+    });
+  });
+});
+
+// mobile navigation menu
 
 (() => {
   const hamburgerBtn = document.querySelector(".hamburger-btn"),
