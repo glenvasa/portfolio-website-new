@@ -445,6 +445,7 @@ img {
 .header-links .link {
   margin-right: 20px;
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-links .link a {
@@ -452,8 +453,14 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.header-links .link a:hover {
+.header-links .link:hover {
+  transform: scaleX(1.1) scaleY(1.1);
+  border-radius: 10%;
+}
+
+.header-links .link a.h-active {
   color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 /* navigation menu mobile */
