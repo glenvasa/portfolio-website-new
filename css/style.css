@@ -360,10 +360,11 @@ img {
 .header .logo a {
   display: inline-block;
   text-align: center;
-  line-height: 36px;
-  height: 40px;
-  width: 40px;
-  font-size: 24px;
+  margin-top: -10px;
+  line-height: 48px;
+  height: 50px;
+  width: 50px;
+  font-size: 28px;
   color: var(--skin-color);
   border-radius: 50%;
   border: 2px solid var(--skin-color);
@@ -416,6 +417,17 @@ img {
   top: 6px;
 }
 
+@media only screen and (max-width: 651px) {
+  .header-links .link a {
+    display: none;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .header .hamburger-btn {
+    visibility: hidden;
+  }
+}
+
 /* header link */
 .header-links-inner {
   display: flex;
@@ -437,6 +449,11 @@ img {
 
 .header-links .link a {
   color: var(--skin-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.header-links .link a:hover {
+  color: white;
 }
 
 /* navigation menu mobile */
