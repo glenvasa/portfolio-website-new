@@ -1,6 +1,6 @@
 // highlight header link for corresponding active section
 
-let headerLinks = document.querySelectorAll(".header-links .link a");
+const headerLinks = document.querySelectorAll(".header-links .link a");
 headerLinks.forEach((link) => {
   link.addEventListener("click", () => {
     setTimeout(() => {
@@ -13,7 +13,33 @@ headerLinks.forEach((link) => {
   });
 });
 
+// highlight about section navlink when "more about me" button clicked on home page
+
+const moreButton = document.getElementById("more-button");
+moreButton.addEventListener("click", () => {
+  const headerLinks = document.querySelectorAll(".header-links .link a");
+  headerLinks.forEach((link) => {
+    link.innerText.includes("about")
+      ? (link.style.color = "white")
+      : (link.style.color = "var(--skin-color)");
+  });
+});
+
+// higlight contact section navlink when "hire me" button clicked on about page
+
+const hireButton = document.getElementById("hire-button");
+hireButton.addEventListener("click", () => {
+  const headerLinks = document.querySelectorAll(".header-links .link a");
+  headerLinks.forEach((link) => {
+    link.innerText.includes("contact")
+      ? (link.style.color = "white")
+      : (link.style.color = "var(--skin-color)");
+  });
+});
+
 // mobile navigation menu
+
+const a = 33;
 
 (() => {
   const hamburgerBtn = document.querySelector(".hamburger-btn"),
