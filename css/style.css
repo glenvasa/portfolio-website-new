@@ -10,9 +10,12 @@
   --bg-black-50: #eff0f4;
   --bg-opacity: rgba(255, 255, 255, 0.5);
   --text-black-900: #000000;
-  --text-black-700: #555555;
-  --text-black-600: #666666;
-  --text-black-300: #bbbbbb;
+  --text-black-700: white;
+  /* #555555; */
+  --text-black-600: white;
+  /* #666666; */
+  --text-black-300: white;
+  /* #bbbbbb; */
   --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
   --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
@@ -28,7 +31,9 @@ body.dark {
   --bg-opacity: rgba(43, 44, 47, 0.5);
   --text-black-900: #ffffff;
   --text-black-700: #ffffff;
-  --text-black-600: #bbbbbb;
+
+  --text-black-600: #d6d6d6;
+  /* #bbbbbb; */
   --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
   --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
   --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
@@ -745,6 +750,10 @@ img {
   padding: 0 0 40px;
 }
 
+.about-section .skills-items {
+  margin-left: 100px !important;
+}
+
 .about-section .skills .skill-item {
   /* display: flex; */
   justify-content: center;
@@ -773,19 +782,16 @@ img {
   height: 40px;
 }
 
-.express {
-}
-
 .pwa {
   width: 65px !important;
-  height: 35px !important;
+  height: 30px !important;
 }
 
 .express-icon {
-  width: 80px !important;
-  height: 60px !important;
-  padding-bottom: 10px !important;
-  margin-right: 50px !important;
+  width: 45px !important;
+  height: 45px !important;
+  /* padding-bottom: 10px !important;
+  margin-right: 50px !important; */
 }
 
 /* .r-n {
