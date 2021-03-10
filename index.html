@@ -145,7 +145,7 @@
         </ul>
       </div>
       <!-- copyright text -->
-      <p class="copyright-text">&copy; 2020 Glen R. Vasa</p>
+      <!-- <p class="copyright-text">&copy; 2021 Glen R. Vasa</p> -->
     </nav>
     <div class="fade-out-effect"></div>
     <!-- navigation menu end -->
@@ -210,6 +210,7 @@
             <a
               href="#about"
               class="link-item btn-1 outer-shadow hover-in-shadow"
+              id="more-button"
               >More About Me</a
             >
           </div>
@@ -272,8 +273,7 @@
             <p>
               <!-- <span>I'm Glen Vasa.</span> <br>          -->
              
-            <br>Learning new coding concepts and techniques, through building projects (front-end, back-end, or 
-            full-stack) has become a daily passion. 
+            <br>Learning new coding concepts and techniques, through building projects, has become a daily passion. 
             <br>
             <br>I love the creativity that front-end development allows in displaying impressive, effective applications from 
             the client perspective. The ability to make something for the user that is both visually enticing while useful in its purpose, is compelling.
@@ -293,6 +293,7 @@
             <a
               href="#contact"
               class="link-item btn-1 outer-shadow hover-in-shadow"
+              id="hire-button"
               >Hire Me</a
             >
           </div>
@@ -311,7 +312,7 @@
         <!-- skills start -->
         <div class="row">
           <div class="skills tab-content active">
-            <div class="row">
+            <div class="row skills-items">
               <!-- skill item start -->
               <div class="skill-item">
                 <p>html</p>
@@ -481,7 +482,7 @@
                 <p>express</p>
                 <div class="skill-icon">
                   <img
-                    src="./img/skills/express-min.png"
+                    src="./img/skills/expressjs-logo.png"
                     class="express-icon"
                     alt="express logo"
                   />
@@ -864,20 +865,20 @@
                   <div class="description">
                     <h3>Project Brief:</h3>
                     <p>
-                      Client-side application developed with React and Redux. <br>
-                      Utilizes MyFlix REST API hosted at myflix2020.herokuapp.com.  <br>
+                      Single-Page React Application developed with React and Redux. <br>
+                      Utilizes MyFlix REST API hosted at <a href="https://myflix2020.herokuapp.com" target="_blank" style="color: var(--skin-color)">myflix2020.herokuapp.com.</a><br>
                       Server-side code is found at <a href="https://github.com/glenvasa/movie_api" target="_blank" style="color: var(--skin-color)">github.com/glenvasa/movie_api.</a><br>
-                      MongoDB stores User and Movie Collections. <br><br>
-                      Users Register/Login from Welcome Screen
-                      and brought to MainView page that displays all movies in database.<br>
-                      Users have the option to search for movies in MainView or click button to view specific movie's details.<br>
-                      MovieView page contains movie's description, genre name, and director; also allows user to add movie to list of favorites and/or click button to view additional genre or director information.<br>
-                      Profile page contains User's Favorite Movies List in which User can navigate to a specific favorite movie's MovieView page, remove movie from Favorites List, or navigate to Update Profile Page if they wish to modify any login credentials.<br><br>
-                      Single-Page React Application (SPA).<br>
+                      MongoDB stores User and Movie Collections. <br>
                       React Routing used to navigate between views and share URLs.<br>
                       Built with Parcel.<br>
                       Uses Bootstrap UI library for styling and responsiveness.<br>
                       Utilizes a mix of class and functional React components.<br>
+                      <br><br>
+                      Users Register/Login from Welcome Screen and brought to MainView page that displays all movies in database.<br>
+                      Users have the option to search for movies in MainView or click button to view specific movie's details.<br>
+                      MovieView page contains movie's description, genre name, and director; also allows user to add movie to list of favorites and/or click button to view additional genre or director information.<br>
+                      Profile page contains User's Favorite Movies List in which User can navigate to a specific favorite movie's MovieView page, remove movie from Favorites List, or navigate to Update Profile Page if they wish to modify any login credentials.<br><br>
+                     
                     </p>
                   </div>
                   <div class="info">
