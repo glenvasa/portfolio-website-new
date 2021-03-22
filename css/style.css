@@ -1563,3 +1563,32 @@ img {
   text-align: right;
   padding: 0 15px;
 }
+
+.contact-social-links {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--text-black-600);
+  margin: 0 4px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.contact-social-links a i {
+  line-height: 40px;
+}
+
+.contact-social-links a:after {
+  border-radius: 50%;
+}
+
+.contact-social-links a:hover {
+  color: var(--skin-color);
+}
