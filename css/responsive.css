@@ -78,6 +78,35 @@
     left: -30px;
     right: auto;
   }
+
+  .about-info .btn-1 {
+    margin-left: 17px !important;
+  }
+
+  .row.skills-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+  }
+
+  .row.skills-items {
+    margin: 0px !important;
+  }
+
+  .skill-icon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hamburger-btn,
+  .close-nav-menu {
+    margin-right: 20px !important;
+    margin-bottom: -15px !important;
+  }
+
+  .style-switcher {
+    margin-right: 20px !important;
+  }
 }
 
 @media (max-width: 574px) {
