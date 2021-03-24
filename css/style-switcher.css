@@ -7,7 +7,7 @@
   z-index: 101;
   border-radius: 5px;
   transition: all 0.3s ease;
-  transform: translateX(100%);
+  transform: translateX(105%);
 }
 
 .style-switcher.open {
@@ -22,14 +22,25 @@
   font-size: 20px;
   color: var(--text-black-900);
   right: 100%;
-  margin-right: 15px;
+  margin-right: 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
   border-radius: 50%;
+  animation: grow 3s ease-in-out infinite;
+}
+
+@keyframes grow {
+  0%, 100% {
+    transform: scaleX(1) scaleY(1);
+  }
+  50% {
+    transform: scaleX(1.1) scaleY(1.1)
+  }
 }
 
 .style-switcher .s-icon i {
   line-height: 40px;
+  font-size: 25px;
 }
 
 .style-switcher .s-icon:after {
@@ -67,7 +78,7 @@
 }
 
 .style-switcher .color-1 {
-  background-color: #fb839e;
+  background-color: #990d2e;
 }
 .style-switcher .color-2 {
   background-color: #ec9412;
