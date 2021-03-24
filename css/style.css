@@ -233,7 +233,7 @@ img {
   justify-content: space-between;
   border-radius: 50%;
   overflow: hidden;
-  animation: topBounce 5s linear infinite;
+  animation: topBounce 4s linear infinite;
 }
 
 @media only screen and (max-width: 766px) {
