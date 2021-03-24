@@ -176,8 +176,8 @@ img {
 .effect-2 {
   /* right: 10%;
   bottom: 20%; */
-  left: 40%;
-  bottom: 35%;
+  left: 35%;
+  bottom: 25%;
   width: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -478,6 +478,7 @@ img {
 }
 
 .header-links .link {
+  font-size: 20px;
   margin-right: 20px;
   background-color: transparent;
   transition: all 0.3s ease-in-out;
