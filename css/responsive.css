@@ -100,12 +100,24 @@
 
   .hamburger-btn,
   .close-nav-menu {
-    margin-right: 20px !important;
+    /* margin-right: 20px !important; */
     margin-bottom: -15px !important;
   }
 
   .style-switcher {
-    margin-right: 20px !important;
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 1),
+      /* rgba(255, 0, 0, 1), */ rgb(44, 26, 104)
+    );
+  }
+
+  .style-switcher-toggler {
+    /* background-image: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 1),
+      rgb(44, 26, 104)
+    );  */
   }
 }
 
