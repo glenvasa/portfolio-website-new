@@ -3,5 +3,5 @@
 Developed with HTML, CSS, and JavaScript
 
 ## Screenshots
-<img src="public/Screenshot (242).png" width="850" height="650">  
-<img src="public/Screenshot (245).png" width="850" height="650">
+<img src="img/portfolio/portfolio-site/Screenshot (271).png">  
+<img src="img/portfolio/portfolio-site/Screenshot (272).png">
