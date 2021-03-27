@@ -39,8 +39,6 @@ hireButton.addEventListener("click", () => {
 
 // mobile navigation menu
 
-const a = 33;
-
 (() => {
   const hamburgerBtn = document.querySelector(".hamburger-btn"),
     navMenu = document.querySelector(".nav-menu"),
