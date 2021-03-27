@@ -1626,6 +1626,14 @@ img {
   resize: none;
 }
 
+input::placeholder {
+  color: rgba(256, 256, 256, 0.6);
+}
+
+textarea::placeholder {
+  color: rgba(256, 256, 256, 0.6);
+}
+
 .contact-section .submit-btn {
   flex: 0 0 100%;
   max-width: 100%;
