@@ -1376,6 +1376,35 @@ img {
   transition: all 0.3s ease;
 }
 
+.back-to-portfolio-btn {
+  margin-left: 0;
+
+  margin-right: auto !important;
+  position: absolute;
+  top: 0.7%;
+  right: 7.5%;
+  margin-top: 10px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: transparent;
+  /* background-image: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8),
+    rgba(60, 0, 255, 0.5)
+  ); */
+  color: var(--skin-color);
+  cursor: pointer;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 38px;
+  transition: all 0.3s ease;
+}
+
+.back-to-portfolio-btn:after {
+  border-radius: 30px;
+}
+
 .portfolio-popup .pp-project-details-btn i {
   margin-left: 4px;
 }
