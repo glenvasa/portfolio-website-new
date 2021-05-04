@@ -156,8 +156,9 @@ function bodyScrollingToggle() {
     prevBtn = popup.querySelector(".pp-prev"),
     nextBtn = popup.querySelector(".pp-next"),
     closeBtn = popup.querySelector(".pp-close"),
-    projectDetailsContainer = popup.querySelector(".pp-details"),
-    projectDetailsBtn = popup.querySelector(".pp-project-details-btn");
+    backToPortfolio = document.querySelector(".back-to-portfolio-btn");
+  (projectDetailsContainer = popup.querySelector(".pp-details")),
+    (projectDetailsBtn = popup.querySelector(".pp-project-details-btn"));
 
   let itemIndex, slideIndex, screenshots;
 
@@ -213,7 +214,7 @@ function bodyScrollingToggle() {
     }
   });
 
-  closeBtn.addEventListener("click", () => {
+  backToPortfolio.addEventListener("click", () => {
     popupToggle();
     if (projectDetailsContainer.classList.contains("active")) {
       popupDetailsToggle();
