@@ -5,7 +5,8 @@ headerLinks.forEach((link) => {
   link.addEventListener("click", () => {
     setTimeout(() => {
       headerLinks.forEach((link) => {
-        window.location.hash.includes(link.innerText)
+        
+        window.location.hash.includes(link.innerText.toLowerCase())
           ? (link.style.color = "white")
           : (link.style.color = "var(--skin-color)");
       });
